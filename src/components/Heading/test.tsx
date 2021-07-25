@@ -1,10 +1,11 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 import Heading from '.'
 
 describe('<Heading />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Heading />)
+    const { container } = renderWithTheme(<Heading>Heading</Heading>)
 
     expect(
       screen.getByRole('heading', { name: /Heading/i })
