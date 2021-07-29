@@ -3,7 +3,8 @@ import Menu, { MenuProps } from '.'
 
 export default {
   title: 'Menu',
-  component: Menu
+  component: Menu,
+  username: 'Poly'
 } as Meta
 
 export const Default: Story<MenuProps> = (args) => <Menu {...args} />
